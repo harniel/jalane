@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:focusable="true">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="11dp"
+        android:layout_alignParentTop="true" />p
+
+    <TextView
+        android:id="@+id/item"
+        android:text="Harniel Salmeron"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:layout_weight="0.59"
+        android:layout_width="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="27dp"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Date Donated:"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="10sp"
+        android:layout_below="@+id/bloodtype"
+        android:layout_alignLeft="@+id/bloodtype"
+        android:layout_alignStart="@+id/bloodtype" />
+
+    <TextView
+        android:id="@+id/bloodtype"
+        android:layout_width="200dp"
+        android:text="Blood Type:"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="10sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item"
+        android:layout_alignLeft="@+id/item"
+        android:layout_alignStart="@+id/item" />
+
+    <TextView
+        android:text="this is the desciption"
+        android:id="@+id/tvdesc"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/icon"
+        android:layout_alignLeft="@+id/icon"
+        android:layout_alignStart="@+id/icon"
+        android:layout_width="350dp"
+        android:layout_marginRight="5dp" />
+
+    <RelativeLayout
+        android:background="@drawable/listbg10"
+        android:layout_width="370dp"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/icon"
+        android:layout_alignStart="@+id/icon"
+        android:layout_height="600dp">
+
+        <Button
+            android:text="Details"
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/button2"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_toRightOf="@+id/button2"
+            android:layout_toEndOf="@+id/button2"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="5dp" />
+
+        <Button
+            android:text="Join"
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_marginBottom="47dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="0dp" />
+
+        <ImageView
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imPic"
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
